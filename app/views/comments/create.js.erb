@@ -1,3 +1,3 @@
 console.log("New comment created with comments#create")
 
-$("#<%= dom_id(@comment.photo) %>_comment_form").before("<li class=\"list-group-item\"><%= escape_javascript(@comment.body) %></li>")
+$("#<%= dom_id(@comment.photo) %>_comment_form").before("<%= escape_javascript(render("comments/comment", comment: @comment)) %>");
