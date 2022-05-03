@@ -1,0 +1,4 @@
+console.log("Comment updated with comments#update")
+
+$("#<%= dom_id(@comment.photo) %>_<%= dom_id(@comment) %>_form").replaceWith("<%= escape_javascript(render("comments/comment", comment: @comment)) %>");
+
