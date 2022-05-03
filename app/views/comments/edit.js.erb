@@ -1,2 +1,3 @@
 console.log("Comment edited with comments#edit")
 
+$("#comment_<%= @comment.id %>").replaceWith("#<%= dom_id(@comment.photo) %>_comment_form")
